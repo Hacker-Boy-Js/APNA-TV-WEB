@@ -1,9 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from henry-richard.ml/World-Radio/radioPlayer.html by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 08 Jan 2022 14:15:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
+  <head>
     <link
       rel="icon"
       href="https://img.icons8.com/windows/800/f1faee/radio-2.png"
@@ -13,6 +11,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -69,8 +68,12 @@
         </ul>
       </div>
     </nav>
+
     <div class="infoPanel d-flex justify-content-center"></div>
-    <div class="player d-flex justify-content-center"></div>
+    <div class="player d-flex justify-content-center">
+      <div id="myElement"></div>
+    </div>
+
     <script type="text/javascript">
       const urlParams = new URLSearchParams(window.location.search);
       const videoUrl = urlParams.get("streamUrl");
@@ -90,21 +93,19 @@
         "https://img.icons8.com/cotton/200/000000/radio--v2.png"
       );
 
-      var playerDiv = document.getElementsByClassName("player")[0];
-
-      var audio = document.createElement("audio");
-      audio.setAttribute("src", videoUrl);
-      audio.controls = true;
-      audio.autoplay = true;
-
       var stationCard = document.createElement("div");
       stationCard.append(titleElement);
       stationCard.append(stationImage);
-      playerDiv.appendChild(audio);
 
       document.querySelector(".infoPanel").appendChild(stationCard);
+
+      var playerInstance = jwplayer("myElement");
+      playerInstance.setup({
+        file: videoUrl,
+        width: 640,
+        height: 40,
+        autostart: true,
+      });
     </script>
   </body>
-
-<!-- Mirrored from henry-richard.ml/World-Radio/radioPlayer.html by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 08 Jan 2022 14:15:29 GMT -->
 </html>
