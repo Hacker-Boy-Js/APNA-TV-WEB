@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from henry-richard.ml/World-Radio/radioPlayer.html by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 08 Jan 2022 14:15:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/windows/800/f1faee/radio-2.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/radioHLS_PlayerStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://img.icons8.com/windows/800/f1faee/radio-2.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+
+        World Radio
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://henry-richard7.ml/">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="infoPanel d-flex justify-content-center"></div>
+    <div class="player d-flex justify-content-center"></div>
+    <script type="text/javascript">
+      const urlParams = new URLSearchParams(window.location.search);
+      const videoUrl = urlParams.get("streamUrl");
+      const stationTitle = urlParams.get("name");
+
+      document.title = stationTitle;
+
+      var titleElement = document.createElement("h1");
+      titleElement.innerHTML = stationTitle;
+      titleElement.className = "stationTitle";
+
+      var stationImage = document.createElement("img");
+      stationImage.className = "stationImage";
+      stationImage.id = "--stationImage";
+      stationImage.setAttribute(
+        "src",
+        "https://img.icons8.com/cotton/200/000000/radio--v2.png"
+      );
+
+      var playerDiv = document.getElementsByClassName("player")[0];
+
+      var audio = document.createElement("audio");
+      audio.setAttribute("src", videoUrl);
+      audio.controls = true;
+      audio.autoplay = true;
+
+      var stationCard = document.createElement("div");
+      stationCard.append(titleElement);
+      stationCard.append(stationImage);
+      playerDiv.appendChild(audio);
+
+      document.querySelector(".infoPanel").appendChild(stationCard);
+    </script>
+  </body>
+
+<!-- Mirrored from henry-richard.ml/World-Radio/radioPlayer.html by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 08 Jan 2022 14:15:29 GMT -->
+</html>
