@@ -13,6 +13,7 @@ window.onload = function () {
     }
   });
 
+
   document.addEventListener("visibilitychange", function (e) {
     if (!document.hidden) {
       document.title = pageTitle;
