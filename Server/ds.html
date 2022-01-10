@@ -1,16 +1,11 @@
 
-
-
-<!-- https://nl1.api.radio-browser.info/json/stations/bycountrycodeexact/us -->
-
-
-
 <html>
 
 <head>
 
   <title>APNA TV PLAYER</title>
-
+<script defer src="dynamicTitle.js"></script>
+	
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -239,26 +234,30 @@ html {
 
     <span class="loading-text-words">V</span>
 
-    
 </div>
 
 </div>
 
+  <video controls autoplay crossorigin poster="" playsinline>
+
+    <video controls crossorigin playsinline poster="">
+		   <source src="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8" type="video/mp4" size="576">
+			<source src="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8" type="video/mp4" size="720">
+            <source src="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8" type="video/mp4" size="480">
+			<source src="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8" type="video/mp4" size="360">
+			<source src="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8" type="video/mp4" size="240">
+
+			</video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
 
 
+<script type="text/javascript">
+	const player = new Plyr('video', {captions: {active: true}});
 
-
-	
-
- <video controls autoplay crossorigin poster="#" playsinline>
-
-    <source type="application/x-mpegURL" src="http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8"> 
-
- </video>
-
- 
-
- 
+// Expose player so it can be used from the console
+window.player = player;
+</script>
 
 <script>
 
