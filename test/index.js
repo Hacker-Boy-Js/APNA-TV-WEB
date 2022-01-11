@@ -1,32 +1,31 @@
-const day = document.querySelector(".day .numb");
-const hour = document.querySelector(".hour .numb");
-const min = document.querySelector(".min .numb");
-const sec = document.querySelector(".sec .numb");
-var timer = setInterval(() => {
-  var currentDate = new Date().getTime();
-  var launchDate = new Date("Sep 18, 2020 13:00:00").getTime();
-  var duration = launchDate - currentDate;
-  var days = Math.floor(duration / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((duration % (1000 * 60)) / 1000);
-  day.innerHTML = days;
-  hour.innerHTML = hours;
-  min.innerHTML = minutes;
-  sec.innerHTML = seconds;
-  if (days < 10) {
-    day.innerHTML = "0" + days;
-  }
-  if (hours < 10) {
-    hour.innerHTML = "0" + hours;
-  }
-  if (minutes < 10) {
-    min.innerHTML = "0" + minutes;
-  }
-  if (seconds < 10) {
-    sec.innerHTML = "0" + seconds;
-  }
-  if (duration < 0) {
-    clearInterval(timer);
-  }
+// Set the date we are counting down to
+var countdownDate = new Date("Sep 30, 2022 18:01:00").getTime();
+
+var x = setInterval(function(){
+
+    // Get today's date and time
+    var nowDT = new Date().getTime();
+
+    // Find the distance between now and the countdown date
+    var distance = countdownDate - nowDT;
+
+    // Time calculations for days, hours, munutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000* 60)) / 1000);
+
+    // Output the result
+    document.querySelector(".days h3").innerHTML = days;
+    document.querySelector(".hours h3").innerHTML = hours;
+    document.querySelector(".minutes h3").innerHTML = minutes;
+    document.querySelector(".seconds h3").innerHTML = seconds;
+
+    // If the countdown is over, write some text
+    if(distance < 0){
+        clearInterval(x);
+        document.querySelector(".countdown-timer").style.display = 'none';
+        document.querySelector(".cs-content h1").innerHTML = 'HAPPY LOHRI';
+    }
+
 }, 1000);
