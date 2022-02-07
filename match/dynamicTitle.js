@@ -16,17 +16,17 @@ window.onload = function () {
   document.addEventListener("visibilitychange", function (e) {
     if (!document.hidden) {
       document.title = pageTitle;
-      favicon.href = "#";
+      favicon.href = "icon.png";
     }
   });
 
   function toggle() {
     if (document.title === attentionMessage) {
         document.title = pageTitle;
-        favicon.href = "#";
+        favicon.href = "icon.png";
     } else {
         document.title = attentionMessage;
-        favicon.href = "#";
+        favicon.href = "icon.png";
     }
   }   
 };
