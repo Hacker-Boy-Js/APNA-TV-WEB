@@ -1,0 +1,198 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WK6VRPBHEH"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+<script defer src="dynamicTitle.js"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [@CCORCH@;
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+
+  gtag('config', 'G-WK6VRPBHEH');
+
+</script>
+
+    <title>Live Main</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<style>
+
+
+
+.loading{ font-weight:700; vertical-align: middle; line-height: 135px; font-size:25px; 
+
+text-transform: uppercase;
+
+    background: linear-gradient(to right, red 30%, rgb(10,60,215) 75%);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+h1 { background-color:#000; margin:0; text-align:center; padding:5px }a { color:#fff; text-decoration:none }
+
+
+
+#headerCount { margin-bottom:15px; font-size:large }#livebbtvPlayer { margin:0 auto!important; box-shadow:0 5px 5px #000 }
+
+
+
+tr th { font-livebbtv-name:bold; background-color:green; padding:2px } * { box-sizing:border-box }
+
+
+
+body { font-family:sans-serif; color:#fff; background:rgb(0,0,0); margin:0; margin-top:5px; }
+
+
+
+body { -webkit-animation:.5s ease 0s normal forwards 1 fadein; animation:.5s ease 0s normal forwards 1 fadein } @keyframes fadein {0%{opacity:0} 66%{opacity:0} 100%{opacity:1} } @-webkit-keyframes fadein{0%{opacity:0} 66%{opacity:0} 100%{opacity:1} }
+
+
+
+.livebbtv-item { position:relative;display: inline-block; width:120px; height:125px;margin:3px; padding:10px; background:black; box-shadow:2px 2px 5px #000; overflow:hidden; border-radius:4px; filter:contrast(100%) }
+
+
+
+.livebbtv-item>*{margin:0;padding:0}
+
+
+
+.livebbtv-item .livebbtv-thumb{width:100%; bottom:10px;top:0px;position:absolute;right:0; float:center;}
+
+
+
+.livebbtv-item .livebbtv-thumb img{width:100%;pointer-events:none} 
+
+
+
+.livebbtv-item .livebbtv-number{display:none;position:absolute;right:6px;top:4px;color:#000;font-size:13px}
+
+
+
+.livebbtv-item .livebbtv-name { position:absolute; left:0; bottom:0; font-size: 12px; display:block; text-align:center; width:100%; background:rgb(50,50,50); color:#fff; padding: 5px;  font-weight:600; text-overflow: ellipsis;white-space: nowrap;
+
+    overflow: hidden;}.livebbtv-item:hover .livebbtv-name{background:black}
+
+.alignleft{
+
+    float:left;
+
+    margin-left:5px;
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:14px;
+
+    height:19px;
+
+    background:teal;
+
+    line-height:19px;
+
+    width:99%;
+
+    border-radius:4px;
+
+    margin:0;
+
+    margin-bottom:8px;
+
+    margin-top:12px;
+
+    }
+
+
+
+.filterinput,.ddlFilterTableRow { 
+
+width: 100%;margin-top: 8px;margin-bottom: 6px;float: center;height: 30px;font-size: small;background-color:rgb(40,40,40);color: white;border-radius:10px;border: 3px solid rgb(0,200,200);outline: none;text-align: center; font-family: "Poppins", sans-serif;
+
+        } .filterinput:hover,.ddlFilterTableRow:hover{border:3px solid rgb(255,60,140); background:black;} 
+
+        
+
+        .livebbtv-item{width:calc(100%/7 - 10px)} } @media only screen and (max-width:768px){.livebbtv-item{width:calc(100%/6 - 10px)} } @media only screen and (max-width:650px){.livebbtv-item{width:calc(100%/5 - 10px)} } @media only screen and (max-width:550px){.livebbtv-item{width:calc(100%/4 - 10px)} } @media only screen and (max-width:425px){.livebbtv-item{width:calc(100%/3 - 10px)} } @media only screen and (max-width:300px){.livebbtv-item{width:calc(100%/2 - 10px)} }
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        </style></head><body>
+
+           
+
+        
+
+
+
+   <!-- List Is Below Slow Down Bro -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="hs1.html"><div class="livebbtv-item"><div class="livebbtv-thumb"><img class="loading" src="https://telegra.ph/file/9fe9f800c7ed5a8b274a2.jpg"alt="AT" style="width:100%;height:100px;"></div><div class="livebbtv-name">S1</div></div></a>
+
+
+
+    <a href="hs2.html"><div class="livebbtv-item"><div class="livebbtv-thumb"><img class="loading" src="https://telegra.ph/file/9fe9f800c7ed5a8b274a2.jpg"alt="AT" style="width:100%;height:100px;"></div><div class="livebbtv-name">S2</div></div></a>
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+</body>    
+
+</html>
